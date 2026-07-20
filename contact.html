@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Define IT</title>
+<meta name="description" content="Get in touch with Define IT for IT support in Palmerston North and across New Zealand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/logo-900w.png" srcset="assets/logo-500w.png 500w, assets/logo-900w.png 900w, assets/logo-1400w.png 1400w" sizes="180px" alt="Define IT" width="900" height="253"></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="contact.html" class="cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:64px 0 56px;">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h1 style="max-width:18ch;">Let's sort your IT out.</h1>
+    <p class="lede">Fill out the form and we'll get back to you.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="panel" style="max-width:620px;">
+      <h2 style="margin-bottom:6px;">Send an enquiry</h2>
+      <p style="margin-bottom:24px;">Tell us a bit about what's going on and we'll get back to you.</p>
+      <form class="form" id="enquiryForm">
+        <input type="hidden" name="access_key" value="fb7fd4b0-b0ef-4530-91a7-d9a8995e7d46">
+        <input type="hidden" name="subject" value="New enquiry from defineit.co.nz">
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" required>
+        </div>
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="Business">
+        </div>
+        <div class="field">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Your phone (optional)</label>
+          <input type="tel" id="phone" name="Phone">
+        </div>
+        <div class="field">
+          <label for="message">What's going on?</label>
+          <textarea id="message" name="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="enquirySubmit" style="justify-self:start;">Send enquiry</button>
+      </form>
+      <p id="formStatus" role="status" aria-live="polite" style="margin-top:14px;font-size:14px;"></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand"><img src="assets/logo-900w.png" srcset="assets/logo-500w.png 500w, assets/logo-900w.png 900w, assets/logo-1400w.png 1400w" sizes="130px" alt="Define IT" width="900" height="253"></div>
+    <div class="foot-meta"><a href="index.html">Home</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
